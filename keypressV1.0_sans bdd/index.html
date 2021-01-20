@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game">
+        
+        <div id="screen_home" class="screen">
+            <div class="name">PRESSKEYSPEED</div>
+            <div id="rools" class="rools">  Welcome to pressKeySpeed! Rools are pretty easy. <br> You have a timer running down while you have to press a maximum of correct Keys. <br> The point is to have the best score in minimum time. <br>Good luck !</div>
+            <input type="button" value="START" id="start" > 
+        </div>
+
+        <div id="screen_game" class="screen">
+            <div class="name">PRESSKEYSPEED</div>
+            <div class="playerValue">
+                <div class="score"><p>score : <span id="score">0</span></p></div>
+                <div class="time"><span id="timer"></span> seconde(s)</div>
+                <div class="round"><p>Round : <span id="round">10</span></p></div>
+            </div>
+            
+            <div class="gameLetter" id=""><p id="rdm-letter"></p></div>
+            
+
+        </div>
+
+        <div id="screen_partyEnd" class="screen">
+            <div class="name">PRESSKEYSPEED</div>
+            <div class="score"><p> SCORE FINAL : <span id="finalScore"></span></p></div>
+            <div class="rank"><p id="rank"></p></div>
+            <div class="20-ranked"></div>
+            <input type="button" value="SAVE" id="go-save">
+            <input type="button" value="START AGAIN" id="new-game">
+        </div>
+
+        <div id="screen_uploadScore" class="screen">
+            <div class="name">PRESSKEYSPEED</div>
+            <div class="score">SCORE : <span id="saved_Score"></span></div>
+            <div class="contact">
+                <label for="name:" > Name : </label>
+                <input type="text" id="playerName">
+            </div>
+            <input type="button" value="SAVE" id="save_btn">
+        </div>
+    </div>    
+</body>
+<script src="js/presskey.js"></script>
+</html>

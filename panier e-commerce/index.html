@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <button id = "shop_bag" >shopBAG</button>
+    <p id="nb_product_shop">0</p>   
+</nav>
+<H1>NOS PRODUITS</H1>
+<section class="products">   
+    <article class="single-product">
+        <h2>Produit 1</h2>
+        <p class="price"><span id="price_product_one">25</span>euros</p>
+        <button id="product_one">ACHETER</button>
+    </article>
+    <article class="single-product">
+        <h2>Produit 2</h2>
+        <p class="price"><span id="price_product_two">30</span>euros</p>
+        <button id="product_two">ACHETER</button>
+    </article>
+    <article class="single-product">
+        <h2>Produit 3</h2>
+        <p class="price"><span id="price_product_three">10</span> euros</p>  
+        <button id="product_three">ACHETER</button>
+    </article>
+    <article class="single-product">
+        <h2>Produit 4</h2>
+        <p class="price"><span id="price_product_four">15</span>euros</p>
+        <button id="product_four">ACHETER</button>
+    </article>
+</section>
+<section id= "shop_out">
+    <div class="total-price">
+        <p class="number"><span id="total_price_shopbag">0</span>€</p>
+        <button id="close">&times;</button>
+    </div>  
+    <div class="line" id="shop_one">  
+        <p>super description du produit numero un genial et incroyable que vous trouverez nulle part ailleurs...achetez vite</p>
+        <div class="math-product">
+            <button id="more_product_one">+</button>
+            <button id="less_product_one">-</button>
+            <input type="number" id = "qty_product_one" class="quantity">
+            <p class="number"><span id="total_price_product_one">20</span>€</p>
+            <button id="delete_product_one">delete</button>
+        </div>
+    </div>
+    <div class="line" id="shop_two">  
+        <p>super 2 description du produit numero un genial et incroyable que vous trouverez nulle part ailleurs...achetez vite</p>
+        <div class="math-product">
+            <button id="more_product_two">+</button>
+            <button id="less_product_two">-</button>
+            <input type="number" id = "qty_product_two" class="quantity">
+            <p class="number"><span id="total_price_product_two">20</span>€</p>
+            <button id="delete_product_two">delete</button>
+        </div>
+    </div>
+    <div class="line" id="shop_three">  
+        <p>super 3 description du produit numero un genial et incroyable que vous trouverez nulle part ailleurs...achetez vite</p>
+        <div class="math-product">
+            <button id="more_product_three">+</button>
+            <button id="less_product_three">-</button>
+            <input type="number" id = "qty_product_three" class="quantity">
+            <p class="number"><span id="total_price_product_three">20</span>€</p>
+            <button id="delete_product_three">delete</button>
+        </div>
+    </div>
+    <div class="line" id="shop_four">  
+        <p>super 4 description du produit numero un genial et incroyable que vous trouverez nulle part ailleurs...achetez vite</p>
+        <div class="math-product">
+            <button id="more_product_four">+</button>
+            <button id="less_product_four">-</button>
+            <input type="number" id = "qty_product_four" class="quantity">
+            <p class="number"><span id="total_price_product_four">20</span>€</p>
+            <button id="delete_product_four">delete</button>
+        </div>
+    </div>
+    
+
+
+</section>
+</body>
+<script src="js/script.js"></script>
+</html>

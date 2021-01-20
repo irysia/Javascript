@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 70%;
+    margin: 0 auto;
+}
+/* mise en place panier */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.shop-bag{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nb_product_shop{
+    margin-left: 10px;
+    color: red;
+}
+/* traitement produit */
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.single-product{
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* traitement panier */
+#shop_out{
+    width: 70%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 230px;
+    top:100px;
+    overflow: auto;
+    background-color: #D8D8D8;
+    border: 1px solid black;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 65px;
+    align-items: center;
+    color: red;
+}
+#close {
+    width: 5%;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+.line {
+    width: 100%;
+    display: flex;
+}
+.math-product{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity{
+    width:20%;
+}
+
+
+#shop_one,#shop_two,#shop_three,#shop_four {
+    display: none;
+}

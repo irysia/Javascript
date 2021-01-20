@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraison</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="screenOne" id="screenOne">
+            <p>Selectionnez un ou plusieurs plats</p>
+            <div class="choice">
+                
+                <div class="selection"><input type="checkbox" id="sandwich">  Sandwish (5,50 euros)</div>
+                <div class="selection"><input type="checkbox" id="mezze">  Plateau mezze (10,50 euros)</div>
+                <div class="selection"><input type="checkbox" id="day">  Plat du jour (8 euros)</div>
+            </div>
+            <div class="btn">
+            <button type="button" id="firstOk">Continuer</button>
+            </div>
+            <p id="firstError">Veuillez selectionner au moins un plat</p>
+    </div>
+
+    <div class="screenTwo" id="screenTwo">
+        <div class="normal">
+            <p id="priceResult"></p>
+            <div class="btn">
+                <button type="button" id="backTwo">Retour</button>
+                <button type="button" id="okTwo">Continuer</button>    
+            </div>
+        </div>
+    </div>
+
+    <div class="screenThree" id="screenThree">
+        <div class="normal">
+            <p>Comment souhaitez-vous régler votre commande ?</p>
+            <div class="choice">
+                <div class="selection"><input type="radio" name="payment" id="now"> Maintenant par carte bancaire VISA</div>
+                <div class="selection"><input type="radio" name="payment" id="after"> À la livraison en espèces ou en chèque</div>
+            </div>
+            <div class="btn">
+            <button type="button" id="backThree">Retour</button>
+            <button type="button" id="okThree">Continuer</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="screenFour" id="screenFour">
+        
+            <p>Paiement par carte bancaire VISA</p>
+            <div class="cbName">
+                <label for="cbName">Nom du titulaire :</label>
+                <input type="text" id="cbName">
+            </div>
+            <div class="cbId">
+                <label for="cbId">Numéro carte bancaire :</label>
+                <input type="text" id="cbId">
+            </div>
+            <div class="expiration">
+                <div class="cbDate">
+                <label for="cbDate">Date d’expiration :</label>
+                </div>
+                <div class="cbmonth">
+                    <label for="cbmonth">Mois</label>
+                    <input type="number" id="cbMonth">
+                </div>
+                <div class="cbYear">
+                    <label for="cbYear">Année</label>
+                    <input type="number" id="cbYear">
+                </div>
+            </div>
+            <div class="cbPin">
+                <label for="cbPin">Cryptogramme :</label>
+                <input type="number" id="cbPin">
+            </div>
+           
+            <div class="btn">
+            <button type="button" id="backFour">Retour</button>
+            <button type="button" id="okFour">Continuer</button>
+            </div>
+        
+            <p id="fourError">Veuillez saisir toutes les informations demandées avant de continuer.</p>
+
+    </div>
+
+    <div class="screenFive" id="screenFive">
+        <div class="normal">
+            <p>Votre commande a bien été prise en compte.</p>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
